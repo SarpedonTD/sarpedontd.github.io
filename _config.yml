@@ -6,7 +6,7 @@ description: "A blog about writing software for groups playing games together." 
 # All of these are optional and can be removed or commented out
 email: "sarpedonTD@gmail.com"
 #twitter_username: "twitteruser"
-#github_username: "githubuser"
+github_username: "SarpedonTD"
 #linkedin_username: "linkedinuser"
 #facebook_username: username
 #flickr_username: username
@@ -14,6 +14,9 @@ email: "sarpedonTD@gmail.com"
 #pinterest_username: username
 #youtube_username: username
 #googleplus_username: +username
+
+# Google Analytics
+google_analytics: G-Z6290WBNE6
 
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
