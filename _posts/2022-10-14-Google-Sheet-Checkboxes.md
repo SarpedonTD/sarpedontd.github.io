@@ -3,7 +3,7 @@
 This post will be on a specific detail of something I've recently done. I do plan on putting some over-arching design posts up as well soon.
 
 In EVE a lot of things are kept secret for what is called op-sec reasons, and there will be a lot of that in this blog. So I won't go into the why of it.
-Another thing abouve EVE Echoes is that I call it the greatest text adventure game ever. As an executor, for better or worse, a great deal of my time spent playing EVE Echoes is spent on Discord. And for a lot of people another part of it is spent in google sheets.
+Another thing about EVE Echoes is that I call it the greatest text adventure game ever. As an executor, for better or worse, a great deal of my time spent playing EVE Echoes is spent on Discord. And for a lot of people another part of it is spent in google sheets.
 EVE is sometimes referred to as a heavy weight Excel client. Which is why things like this happen: https://arstechnica.com/gaming/2022/05/eve-onlines-ms-excel-partnership-makes-spreadsheets-in-space-official/
 
 And now, with the help of Discord bots, the two can meet. Discord bots will be a common topic here.
