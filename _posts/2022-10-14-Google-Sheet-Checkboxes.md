@@ -15,7 +15,7 @@ On top of that, the user would want a column full of checkboxes to go with the d
 But it wasn't so obvious from the API perspective. I had to do with any seasoned developer does. Search on google for stackoverflow answers.
 
 Now our bot is in C#, and the google API docs don't cater to C#.
-This is the linke I got the most use out of: 
+This is the link I got the most use out of: 
 [https://webapps.stackexchange.com/questions/121502/how-to-add-checkboxes-into-cell-using-google-sheets-api-v4](https://webapps.stackexchange.com/questions/121502/how-to-add-checkboxes-into-cell-using-google-sheets-api-v4).
 
 A careful inspection of this will help once you know that you need a batch update for a conditional formatting request: 
