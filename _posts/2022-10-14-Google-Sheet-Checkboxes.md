@@ -68,4 +68,4 @@ Some notes:
 So there we go. This was a small piece that made the entire command much more user friendly. With a simple command the user got a ready-to-use sheet shared with them. 
 And I made sure they didn't even need to click a few times to add a checkbox column. As always, that last detail took the most time to do out of the entire feature. 
 
-
+<a href="https://www.buymeacoffee.com/sarpedontdw" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
