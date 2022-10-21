@@ -120,7 +120,7 @@ _client.ButtonExecuted += handlers.ClientOnButtonExecuted;
 ## Further Discord Commands. 
 
 Because things can go wrong, you also need commands for the following locked to certian discord user considered admins:
-* Re-prase and re-create the buttons for a KM message.
+* Re-parse and re-create the buttons for a KM message.
 * Manually override any values parsed wrong.
 * Manually remove or add a PPK event on behalf of another pilot.
 
