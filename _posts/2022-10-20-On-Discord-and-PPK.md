@@ -1,12 +1,12 @@
-## On Discord and PPK
+# On Discord and PPK
 
 First, for anyone not familiar with the acronym, in EVE PPK is Pay Per Kill.
 
 EVE runs on Google Sheets and Discord. I'll get more into Discord particulars later. But PPK systems are one reason. 
 A central part of EVE Echoes is a kill mail. Here's one for reference:
 
-# Overview
-[A Kill Mail](https://cdn.discordapp.com/attachments/758102282276700232/908505170760056832/unknown.png)
+## Overview
+![A Kill Mail](https://cdn.discordapp.com/attachments/758102282276700232/908505170760056832/unknown.png)
 
 The game, unlike EVE Online, does not have a KM API. Most alliances therefore have to implement some work around. And Discord is often central to that work around.
 It starts with OCR of the KM above when shared. I won't go into that here, because that's not  a part I am familiar with. Though I thank the devs that do that portion. 
