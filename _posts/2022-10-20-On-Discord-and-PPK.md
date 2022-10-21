@@ -17,9 +17,9 @@ Suffice it say after OCR you have the various fields from the image available. T
 
 The typical flow for building an alliance PPK program goes like this: 
 
-1) User grabs an image of the KM from the game, and posts an often cropped version of it into a Discord channel dedicated to kill mails. 
-2) A bot picks up the image, runs it through OCR, and outputs the information parsed into some schematized store. 
-3) Some analytics are run and output somewhere for alliance members to see.
+1. User grabs an image of the KM from the game, and posts an often cropped version of it into a Discord channel dedicated to kill mails. 
+2. A bot picks up the image, runs it through OCR, and outputs the information parsed into some schematized store. 
+3. Some analytics are run and output somewhere for alliance members to see.
 
 ## PPK Events.
 For VOID, I wanted to expand on what PPK means. Typically PPK is for final blow. The person gets some % of the kill in ISK back. 
@@ -35,15 +35,19 @@ All of these we can give PPK for. On top of that, things that don't appear on th
 * Scouts
 
 This will look like a DKP system for anyone familiar with DKP (Dragon Kill Points) from other MMOs. But the DKP is backed by ISK, which is obtained in-game.
+
 ## Pilot  Workflow
+
 The workflow, from a Pilot's perspective, looks like this: 
-1) Get a KM
-2) Post the KM to dedicated Discord channel
-3) Other pilot's involved in the KM can then added their own PPK events. FCs, tackle, can add PPK events through commands or buttons createed by a Discord bot. 
+
+1. Get a KM
+2. Post the KM to dedicated Discord channel
+3. Other pilot's involved in the KM can then added their own PPK events. FCs, tackle, can add PPK events through commands or buttons createed by a Discord bot. 
 Because its in a visible channel there's very little risk of someone lying. 
-4) A summary is created run at some point, and through some manual method the pilots are given the PPK for the week/month or for each individual PPK event through a ticket bot.
+4. A summary is created run at some point, and through some manual method the pilots are given the PPK for the week/month or for each individual PPK event through a ticket bot.
 
 ## Storage for the Workflow
+
 For design of storage, most systems have an OLTP and OLAP system. 
 For VOID Azure Table backs the initial ingress of KM and PPK events. I'll leave the schema for a different time. 
 And we creatively use Google Sheets as the OLAP store. 
