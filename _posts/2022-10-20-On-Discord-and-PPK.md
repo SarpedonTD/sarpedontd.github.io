@@ -21,7 +21,7 @@ The typical flow for building an alliance PPK program goes like this:
 2. A bot picks up the image, runs it through OCR, and outputs the information parsed into some schematized store. 
 3. Some analytics are run and output somewhere for alliance members to see.
 
-## PPK Events.
+## PPK Events
 For VOID, I wanted to expand on what PPK means. Typically PPK is for final blow. The person gets some % of the kill in ISK back. 
 So in VOID's system, I have a KM still, but also added a separate PPK event. A typical KM already has three PPK events: 
 * Damage
@@ -52,7 +52,7 @@ For design of storage, most systems have an OLTP and OLAP system.
 For VOID Azure Table backs the initial ingress of KM and PPK events. I'll leave the schema for a different time. 
 And we creatively use Google Sheets as the OLAP store. 
 The reason for these two picks is mainly due to cost and ease of maintenance. 
-Each PPK event is written to a google sheet dedicated to a specific month for all VOID, and a separate sheet for the pilot's corp. This allows corp's to build thier own unique systems without having to re-create all the other parts.
+Each PPK event is eventually written to a google sheet dedicated to a specific month for all VOID, and a separate sheet for the pilot's corp. This allows corp's to build thier own unique systems without having to re-create all the other parts.
 
 ## Adding PPK Events via Discord
 
@@ -117,7 +117,7 @@ _client.ButtonExecuted += handlers.ClientOnButtonExecuted;
 ```
 
 
-## Further Discord Commands. 
+## Further Discord Commands
 
 Because things can go wrong, you also need commands for the following locked to certian discord user considered admins:
 * Re-parse and re-create the buttons for a KM message.
