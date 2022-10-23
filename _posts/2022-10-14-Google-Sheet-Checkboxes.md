@@ -1,5 +1,5 @@
 ---
-tags: sheets eve
+tags: sheets VOID
 ---
 
 # Adding checkboxes to Google sheets, because EVE
