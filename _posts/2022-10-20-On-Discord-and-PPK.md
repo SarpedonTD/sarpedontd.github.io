@@ -36,7 +36,7 @@ All of these we can give PPK for. On top of that, things that don't appear on th
 
 This will look like a DKP system for anyone familiar with DKP (Dragon Kill Points) from other MMOs. But the DKP is backed by ISK, which is obtained in-game.
 
-## Pilot  Workflow
+## Pilot Workflow
 
 The workflow, from a Pilot's perspective, looks like this: 
 
@@ -56,7 +56,7 @@ Each PPK event is eventually written to a google sheet dedicated to a specific m
 
 ## Adding PPK Events via Discord
 
-For steps 3 in [Pilot  Workflow](Pilot  Workflow) the Discord bot listens for KMs, creates a row for the KM, then creates PPK buttons. Note that PPK is assigned to an in-game clone, not a Discord user. 
+For steps 3 in [pilot workflow](Pilot-Workflow) the Discord bot listens for KMs, creates a row for the KM, then creates PPK buttons. Note that PPK is assigned to an in-game clone, not a Discord user. 
 
 
 ``` C#
