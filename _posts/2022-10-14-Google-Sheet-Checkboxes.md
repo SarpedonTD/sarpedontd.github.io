@@ -1,3 +1,7 @@
+---
+tags: sheets,eve
+---
+
 # Adding checkboxes to Google sheets, because EVE
 
 This post will be on a specific detail of something I've recently done. I do plan on putting some over-arching design posts up as well soon.
