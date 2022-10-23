@@ -1,3 +1,7 @@
+---
+tags: VOID Discord 
+---
+
 # On Discord and PPK
 
 First, for anyone not familiar with the acronym, in EVE PPK is Pay Per Kill.
