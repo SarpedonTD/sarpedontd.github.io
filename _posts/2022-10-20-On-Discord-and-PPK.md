@@ -56,7 +56,7 @@ Each PPK event is eventually written to a google sheet dedicated to a specific m
 
 ## Adding PPK Events via Discord
 
-For steps 3 in [Pilot Workflow](pilot-workflow) the Discord bot listens for KMs, creates a row for the KM, then creates PPK buttons. Note that PPK is assigned to an in-game clone, not a Discord user. 
+For steps 3 in [Pilot Workflow](#pilot-workflow) the Discord bot listens for KMs, creates a row for the KM, then creates PPK buttons. Note that PPK is assigned to an in-game clone, not a Discord user. 
 
 
 ``` C#
