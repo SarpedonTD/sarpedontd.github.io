@@ -104,3 +104,7 @@ Tesseract has a high level of accuracy on common fonts that you would expect to 
 Creating a model requires a set of training data. This data consists of questions (images containing text) and answers (the exact coordinates of every single character and its value). This can be a very labor-intensive process if you are training on photographs. Some poor person has to draw a [pixel-perfect box](https://raw.githubusercontent.com/A2K/jTessBoxEditor/master/screenshot.png) around every character separately and type in the correct value.
 
 Thankfully, if you have a copy of the font you are trying to recognize, there's an easier way. Tesseract provides scripts that will generate images and boxes given any sample text and a font. This data can then be used to refine the existing models - taking most of the performance of the original, but cleaning up some of the edge cases. This process is [described in detail in their documentation](https://tesseract-ocr.github.io/tessdoc/tess4/TrainingTesseract-4.00.html#creating-training-data). Eve Echoes uses the [Shentox Light font](https://emtype.net/fonts/shentox).
+
+
+---
+You can support VOID's PPK and other tech: <a href="https://www.buymeacoffee.com/sarpedontdw" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
