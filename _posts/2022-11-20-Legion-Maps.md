@@ -75,7 +75,7 @@ Command options I might be able to make it easier to look up a name by showing a
 
 Finally, there is an auto-completion capability as well: https://discord.com/developers/docs/interactions/application-commands#autocomplete. Lots of way to improve the simple command with Discord features. 
 
-So that's a brief random walk through bots, maps, Legion, and rivals. The intent is there will be a few more Legion related posts!
+So that's a brief random walk through bots, maps, Legion, and Rivals. The intent is there will be a few more Legion related posts!
 
 Visit 13lade's Twitch: https://www.twitch.tv/13lade
 There's a Rivals tournament facilitated by Legion today on this channel!
