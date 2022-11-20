@@ -74,7 +74,7 @@ There is some boilerplate to a bot, however. For example:
 As part of creating this command I think I have a good template I can leverage in the future, and share.
 
 ## Options
-Command options I might be able to make it easier to look up a name by showing a list of all names as part of the slash command. Discord commands can be created with pre-set options for the arguments. Unfortunately the limit to options is 25. But there is grouping, so I can break down the 48 maps into some grouping (maybe alphabetically) so each group would have less than 25 options. 
+I might be able to make it easier to look up a name by showing a list of all names as part of the slash command. Discord commands can be created with pre-set options for the arguments. Unfortunately the limit to options is 25. But there is grouping, so I can break down the 48 maps into some grouping (maybe alphabetically) so each group would have less than 25 options. 
 
 Finally, there is an auto-completion capability as well: https://discord.com/developers/docs/interactions/application-commands#autocomplete. Lots of way to improve the simple command with Discord features. 
 
