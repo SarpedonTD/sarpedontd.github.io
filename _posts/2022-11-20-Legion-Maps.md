@@ -2,7 +2,9 @@
 tags: Discord Legion
 ---
 
-# Background
+# Rivals Legion Maps
+
+## Background
 Rivals is a Command and Conquer game for mobile that came out a few years ago. I'm going to skip right past discussing that as a concept. It does have a tight-knit community of players. Rivals was the first game I really used Discord for interacting with other players. Thanks to Davo (another member of the Rivals community) it also became the first scenario I ended up writing a Discord bot for. This was early Discord bot days. So before intents, and before slash commands. 
 
 The simplest use case for a bot for Rivals is to show a map. Rivals has 48 maps you can play on. And of ccourseyou can challenge other players to a game. So it makes sense to want to look up the map ahead of time. 
@@ -13,7 +15,7 @@ This is probably my favorite map (the only map I've beaten 13lade on, that's a s
 While Rivals has a random map feature in game it's revealed at the last moment it also helps to pick a random map ahead of time so that both players know what map to expect, but it's still chosen at random. Also, despite what looks like on the surface to be a small map and therefore simple, it turns out there is a lot of nuance to maps. Some are not at all fun to play on and poorly balanced. I'm looking at you:
 ![Canal Row](http://davoonline.com/rivals/Bot/maps/canalrow.png)
 
-# Features
+## Features
 The use case is perfect for getting started with a bot. There's no calculation. And the simplest function, a command that just picks a map at random, and has no arguments. In the first days that would be a "\~map" command, that would go through the message received handler. Legion uses the "~" prefix to identify commands. This of course means for a simple use case this bot would need to read message content. But you could limit it to a specific channel at least. This was the typical model for those of us that were vigilant about security. 
 
 I looked over the code yesterday, and I forgot just how much more there can be to it. I completely forgot that the bot support localization in Russian and German (translations provided to me by members of the community). As one small touch, for example, it responds to ~karte for German as well as ~map.
@@ -22,13 +24,13 @@ Beyond picking a map, players often want to see a particular map ahead of time. 
 
 Finally, for tournaments, or just for fun, you could create and store map groups. Its a named list of maps, that could also be used to supply the maps used for a tournament. 
 
-# Edit Distance
+## Edit Distance
 
 For making sure the command always returned a map I started with https://www.nuget.org/packages/Fastenshtein. Given an input it would return the closest localized map name. One trick it would do is remove "the", or "das" and "der" if in German, from the map name as this would create some noise in the edit distance. Looking at the code now I found a small bug.  I used the wrong normalizer for one of the languages so the wrong words would get removed before looking up edit distance.
 
 Because the command ALWAYS returns a map now based on edit distance, there was some brief fun around looking up what maps a particular player name would result in. For example, "Sarpedon" has the smallest edit distance of all the maps to "Caged In"
 
-# Updating
+## Using a Slash Command
 So now there are app commands, and "map" makes for a great global command. This is the snippet for adding the command: 
 
 ```C#
@@ -70,7 +72,7 @@ There is some boilerplate to a bot, however. For example:
 
 As part of creating this command I think I have a good template I can leverage in the future, and share.
 
-# Options
+## Options
 Command options I might be able to make it easier to look up a name by showing a list of all names as part of the slash command. Discord commands can be created with pre-set options for the arguments. Unfortunately the limit to options is 25. But there is grouping, so I can break down the 48 maps into some grouping (maybe alphabetically) so each group would have less than 25 options. 
 
 Finally, there is an auto-completion capability as well: https://discord.com/developers/docs/interactions/application-commands#autocomplete. Lots of way to improve the simple command with Discord features. 
