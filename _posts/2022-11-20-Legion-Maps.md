@@ -65,7 +65,7 @@ This is a snippet of the handler:
 ```
 
 And using application commands makes it really easy to add this command to a server: 
-[https://discord.com/api/oauth2/authorize?client_id=1043771859159756840&scope=applications.commands]
+https://discord.com/api/oauth2/authorize?client_id=1043771859159756840&scope=applications.commands
 
 There is some boilerplate to a bot, however. For example:
 * Logging
