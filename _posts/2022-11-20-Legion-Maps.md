@@ -13,6 +13,7 @@ This is probably my favorite map (the only map I've beaten 13lade on, that's a s
 ![Orbit](http://davoonline.com/rivals/Bot/maps/orbit.png)
 
 While Rivals has a random map feature in game it's revealed at the last moment it also helps to pick a random map ahead of time so that both players know what map to expect, but it's still chosen at random. Also, despite what looks like on the surface to be a small map and therefore simple, it turns out there is a lot of nuance to maps. Some are not at all fun to play on and poorly balanced. I'm looking at you:
+
 ![Canal Row](http://davoonline.com/rivals/Bot/maps/canalrow.png)
 
 ## Features
