@@ -44,7 +44,7 @@ So now there are app commands, and "map" makes for a great global command. This 
 
 await client.BulkOverwriteGlobalApplicationCommandsAsync( new ApplicationCommandProperties[] {guildMessageCommand});
 ```
-This is a ssnippet of the handler: 
+This is a snippet of the handler: 
 ```C#
     private Task _client_SlashCommandExecuted(SocketSlashCommand arg)
     {
