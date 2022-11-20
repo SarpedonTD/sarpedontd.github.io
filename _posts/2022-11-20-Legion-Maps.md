@@ -80,7 +80,7 @@ Finally, there is an auto-completion capability as well: https://discord.com/dev
 
 So that's a brief random walk through bots, maps, Legion, and Rivals. The intent is there will be a few more Legion related posts!
 
-Visit 13lade's Twitch: https://www.twitch.tv/13lade
+Visit 13lade's Twitch: [https://www.twitch.tv/13lade](https://www.twitch.tv/13lade)
 There's a Rivals tournament facilitated by Legion today on this channel!
 
 Please support Legion and other tech: <a href="https://www.buymeacoffee.com/sarpedontdw" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
