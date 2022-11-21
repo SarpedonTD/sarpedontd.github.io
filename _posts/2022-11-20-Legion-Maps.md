@@ -17,13 +17,13 @@ While Rivals has a random map feature in game it's revealed at the last moment w
 ![Canal Row](http://davoonline.com/rivals/Bot/maps/canalrow.png)
 
 ## Features
-The use case is perfect for getting started with a bot. There's no calculation. And the simplest function, a command that just picks a map at random, and has no arguments. In the first days that would be a "\~map" command, that would go through the message received handler. Legion uses the "~" prefix to identify commands. This of course means for a simple use case this bot would need to read message content. But you could limit it to a specific channel at least. This was the typical model for those of us that were vigilant about security. 
+The basic use case is perfect for getting started with a bot. There's no calculation, no state. The functionality is simple: a command that just picks a map at random, and has no arguments. In the first days that would be a "\~map" command, that would go through the message received handler. Legion uses the "~" prefix to identify commands. This of course means for a simple use case this bot would need to read message content. Uou could limit it to a specific channel at least. This was the typical model for those of us that were vigilant about security. 
 
-I looked over the code yesterday, and I forgot just how much more there can be to it. I completely forgot that the bot support localization in Russian and German (translations provided to me by members of the community). As one small touch, for example, it responds to ~karte for German as well as ~map.
+I looked over the code yesterday, and I forgot just how much more there can be to it after the basic use case. I completely forgot that the bot supports localization in Russian and German (translations provided to me by members of the community). As one small touch, for example, it responds to ~karte for German as well as ~map.
 
-Beyond picking a map, players often want to see a particular map ahead of time. So you want something like "~map orbit". This immediately brings up the observation that bots start to make Discord look like a command like shell, but missing auto complete and tool tips. Discord's App Commands help address once they were introduced.  But until then the bot needed a way to get the map that was closest to what was type. Cause if you typed ~map \<name\> you clearly wanted a map, so it should always return the best guest at a map. 
+Beyond picking a map, players often want to see a particular map ahead of time. So you want something like "~map orbit". This immediately brings up the observation that bots start to make Discord look like a command like shell, but is missing auto complete and tool tips. Discord's App Commands helped address that once they were introduced.  But until then the bot needed a way to get the map that was closest to what was type. Cause if you typed ~map \<name\> you clearly wanted a map, so it should always return the best guest at a map even if there was no perfect match.
 
-Finally, for tournaments, or just for fun, you could create and store map groups. Its a named list of maps, that could also be used to supply the maps used for a tournament. 
+Finally, for tournaments, or just for fun, you could create and store map groups. It's a named list of maps that could also be used to supply the valid maps used for a tournament. 
 
 ## Edit Distance
 
