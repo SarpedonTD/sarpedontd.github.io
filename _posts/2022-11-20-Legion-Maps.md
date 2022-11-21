@@ -12,7 +12,7 @@ The simplest use case for a bot for Rivals is to show a map. Rivals has 48 maps 
 This is probably my favorite map (the only map I've beaten 13lade on, that's a story for another time):
 ![Orbit](http://davoonline.com/rivals/Bot/maps/orbit.png)
 
-While Rivals has a random map feature in game it's revealed at the last moment it also helps to pick a random map ahead of time so that both players know what map to expect, but it's still chosen at random. Also, despite what looks like on the surface to be a small map and therefore simple, it turns out there is a lot of nuance to maps. Some are not at all fun to play on and poorly balanced. I'm looking at you:
+While Rivals has a random map feature in game it's revealed at the last moment when a match starts. For tournaments it helps to pick a map at random, but ahead of time so that both players know what map to expect and can pick thier decks accordingly. Finally, despite what looks like on the surface to be a small map and therefore simple, it turns out there is a lot of nuance to maps. Some are not at all fun to play on and poorly balanced. I'm looking at you:
 
 ![Canal Row](http://davoonline.com/rivals/Bot/maps/canalrow.png)
 
