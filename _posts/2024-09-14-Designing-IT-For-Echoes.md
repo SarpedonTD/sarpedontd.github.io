@@ -54,7 +54,7 @@ So, what have we arrived at? If you imagine a basic CRUD app, we've removed the 
 
 A diagram of the result, with some additional details of the interactions:
 
-```mermaid
+<pre class="mermaid">
 graph LR;
  User --Slash commands--> Discord
  Discord --API Gateway-->DiscordBot;
@@ -63,18 +63,18 @@ graph LR;
  GoogleSheets <--sync--> Store;
  Admin <--⌨️,👀--> GoogleSheets
  Admin --Slash commands--> Discord
-```
+</pre>
 
 
 An update from Discord, to show that updates to Google Sheets are eventually consistent, not atomic. 
 
-```mermaid
+<pre class="mermaid">
 sequenceDiagram
  Discord User->>Discord Bot: Update Corp
  Discord Bot<<->>Data Store: Update
  Discord Bot->>Discord User: Update Complete
  Data Store<<->>Google Sheets: Sync
-```
+</pre>
 
 We have potentially created an issue. We've traded off consistency for reduced latency. It is now possible to temporarily see different results in sheets than in Discord until the sync happens. It is also possible, without a lot more work,  to create conflicts if both are updated simultaneously. 
 
@@ -87,13 +87,13 @@ For the MVP, the thing I choose to focus on is my admin users and getting the co
 For the choice of the store:
 It looks a lot like a cache. So Redis is an option. It can also be an SQL instance. Revisiting the requirements: durability is important here, and it needs to sync updates back to the Google Sheets store. With that in mind, I came up with two options that kept the maintenance down by avoiding standing up a Redis cluster or SQL instance:
 
-1) Discord Bot uses Raft.Next: https://dotnet.github.io/dotNext/features/cluster/raft.html. Ensure availability, and that no updates are lost (assuming multiple nodes)
+1) The process running the DiscordBot uses Raft.Next consensus to build an in-memory distributed K/V store. [https://dotnet.github.io/dotNext/features/cluster/raft.html](https://dotnet.github.io/dotNext/features/cluster/raft.html). Ensures availability, and that no updates are lost (assuming multiple nodes)
 
 2) Cosmos. Free for this scale, and has a change feed processor to ensure all updates are eventually processed. And this almost certainly uses a consensus algorithm, like Raft, under the hood (as does SQL in replication scenarios).
 
 I got fairly far with 1), but decided that if I ever wanted anyone to help me 2) is the more maintainable option. Finally, the sync from sheets to cosmos, for the MVP, is triggered via discord command. So for the MVP we have:
 
-```mermaid
+<pre class="mermaid">
 graph LR;
  User --Slash commands, read-only--> Discord
  Discord --API Gateway-->DiscordBot;
@@ -103,7 +103,7 @@ graph LR;
  DiscordBot <--Sheets client-->GoogleSheets;    
  Admin <--⌨️,👀--> GoogleSheets
  Admin --Slash commands, read-only--> Discord    
-```
+</pre>
 
 
 I will end here for now. The next updates will be about what this MVP showed, and iterating the design from there. 
@@ -112,6 +112,6 @@ I will end here for now. The next updates will be about what this MVP showed, an
 Not generated using AI. Edited with the help of Grammarly. 
 
 ## Acknowledgment
-Mermaid integration achieved with help from: https://jackgruber.github.io/2021-05-09-Embed-Mermaid-in-Jekyll-without-plugin/
+Mermaid integration achieved with help from: [https://jackgruber.github.io/2021-05-09-Embed-Mermaid-in-Jekyll-without-plugin/](https://jackgruber.github.io/2021-05-09-Embed-Mermaid-in-Jekyll-without-plugin/) and [https://mermaid.js.org/config/usage.html#simple-full-example](https://mermaid.js.org/config/usage.html#simple-full-example)
 
 <a href="https://www.buymeacoffee.com/sarpedontdw" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
